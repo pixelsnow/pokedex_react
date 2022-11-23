@@ -1,0 +1,36 @@
+:root {
+  --card-width: 180px;
+  --card-height: 250px;
+}
+
+.card {
+  background-color: coral;
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: 1rem;
+}
+
+.card .img-container {
+  background-color: lightblue;
+  height: var(--card-width);
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: calc(0.8 * var(--card-width));
+  height: calc(0.8 * var(--card-width));
+}
+
+.card .info {
+  height: calc(var(--card-height) - var(--card-width));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .info h3 {
+}
