@@ -17,10 +17,12 @@ class PokeSingle extends Component {
     return (
       <div>
         <h2>{this.state.data.name}</h2>
-        {/* <img
-          src={this.state.data.sprites.other.dream_world.front_default}
-          alt={this.state.data.name}
-        /> */}
+        {
+          <img
+            src={this.state.data.sprites?.other.dream_world.front_default}
+            alt={this.state.data.name}
+          />
+        }
       </div>
     );
   }
