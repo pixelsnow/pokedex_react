@@ -7,8 +7,8 @@ import Home from "./components/Home";
 import PokeSingle from "./components/PokeSingle";
 import React, { Component } from "react";
 
-// THIS IS A WORKAROUND
-const RouterWrapper = () => {
+// THIS IS A WORKAROUND to pass parameters to a class component
+const RouterWrapper = (props) => {
   const params = useParams();
   return <PokeSingle params={params} {...props} />;
 };
