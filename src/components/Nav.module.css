@@ -1,0 +1,16 @@
+.nav {
+  background-color: coral;
+}
+
+.nav ul {
+  display: flex;
+  height: 100%;
+}
+
+.nav ul li {
+  list-style: none;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
