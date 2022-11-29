@@ -9,7 +9,10 @@ import React, { Component } from "react";
 
 // THIS IS A WORKAROUND to pass parameters to a class component
 const RouterWrapper = (props) => {
+  // Currently props is empty
   const params = useParams();
+  console.log("params is");
+  console.log(params);
   return <PokeSingle params={params} {...props} />;
 };
 

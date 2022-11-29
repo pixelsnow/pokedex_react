@@ -16,6 +16,7 @@ class PokeList extends Component {
           return fetch(p.url).then((res) => res.json());
         });
         Promise.all(fetches).then((res) =>
+          // TODO: get only image and name, don't save extra shit
           this.setState({ data: res, isLoading: false })
         );
       })
@@ -29,6 +30,7 @@ class PokeList extends Component {
       <div className={classes.pokelist}>
         {this.state.data.map((card) => (
           <Card
+            // Here is where we could pass all the data to the hook
             name={card.name}
             key={card.name}
             img={card.sprites.other.dream_world.front_default}
