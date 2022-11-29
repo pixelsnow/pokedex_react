@@ -1,6 +1,7 @@
 import React from "react";
-import classes from "./Card.module.css";
 import { Link } from "react-router-dom";
+
+import classes from "./Card.module.css";
 
 const Card = (props) => {
   return (
